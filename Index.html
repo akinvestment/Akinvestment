@@ -1,0 +1,1056 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>AK INVESTMENT | Professional Stock Advisory</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+color:white;
+scroll-behavior:smooth;
+}
+
+.gold{
+color:#facc15;
+}
+
+.glass{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.gradient-btn{
+background:linear-gradient(90deg,#facc15,#eab308);
+}
+
+.hero-bg{
+background:
+radial-gradient(circle at top right, rgba(250,204,21,0.15), transparent 25%),
+radial-gradient(circle at bottom left, rgba(250,204,21,0.08), transparent 25%);
+}
+
+.card-hover:hover{
+transform:translateY(-8px);
+transition:0.3s;
+}
+
+.market-ticker{
+white-space:nowrap;
+overflow:hidden;
+box-sizing:border-box;
+}
+
+.market-ticker p{
+display:inline-block;
+padding-left:100%;
+animation:ticker 18s linear infinite;
+}
+
+@keyframes ticker{
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!-- MARKET TICKER -->
+<div class="bg-yellow-400 text-black py-2 market-ticker text-sm font-bold">
+
+<p>
+NIFTY ▲ 24,650 | BANKNIFTY ▲ 52,400 | SENSEX ▲ 81,120 | GOLD ▲ 72,200 | USD/INR ▲ 83.12
+</p>
+
+</div>
+
+
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-xl border-b border-gray-800">
+
+<div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-2xl md:text-3xl font-extrabold gold">
+AK INVESTMENT
+</h1>
+
+
+<!-- DESKTOP MENU -->
+<div class="hidden lg:flex gap-8 text-sm font-medium">
+
+<a href="#home" class="hover:text-yellow-400 transition">Home</a>
+<a href="#overview" class="hover:text-yellow-400 transition">Overview</a>
+<a href="#services" class="hover:text-yellow-400 transition">Services</a>
+<a href="#plans" class="hover:text-yellow-400 transition">Plans</a>
+<a href="#whyus" class="hover:text-yellow-400 transition">Why Us</a>
+<a href="#leaders" class="hover:text-yellow-400 transition">Leadership</a>
+<a href="#legal" class="hover:text-yellow-400 transition">Legal</a>
+<a href="#leadform" class="hover:text-yellow-400 transition">Consultation</a>
+<a href="#payment" class="hover:text-yellow-400 transition">Payment</a>
+<a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+
+</div>
+
+
+
+<!-- MOBILE MENU BUTTON -->
+<button onclick="toggleMenu()"
+class="lg:hidden bg-yellow-400 text-black p-3 rounded-xl font-bold">
+
+☰
+
+</button>
+
+</div>
+
+
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu"
+class="hidden lg:hidden bg-black border-t border-gray-800 px-6 py-6 space-y-5 text-center text-lg font-medium">
+
+<a href="#home" class="block hover:text-yellow-400">Home</a>
+<a href="#overview" class="block hover:text-yellow-400">Overview</a>
+<a href="#services" class="block hover:text-yellow-400">Services</a>
+<a href="#plans" class="block hover:text-yellow-400">Plans</a>
+<a href="#whyus" class="block hover:text-yellow-400">Why Us</a>
+<a href="#leadform" class="block hover:text-yellow-400">Consultation</a>
+<a href="#payment" class="block hover:text-yellow-400">Payment</a>
+<a href="#contact" class="block hover:text-yellow-400">Contact</a>
+
+<button class="gradient-btn text-black px-6 py-3 rounded-full font-bold w-full mt-5">
+Join Now
+</button>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+<section id="home"
+class="min-h-screen flex items-center hero-bg px-4 md:px-6 pt-36 pb-20">
+
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+
+<div class="text-center lg:text-left">
+
+<p class="gold tracking-[4px] font-semibold mb-5 text-sm md:text-base">
+INDIA'S TRUSTED STOCK ADVISORY COMPANY
+</p>
+
+<h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-8">
+
+Professional <br>
+Market Guidance <br>
+
+<span class="gold">
+With AK INVESTMENT
+</span>
+
+</h1>
+
+<p class="text-gray-300 text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0">
+
+AK INVESTMENT provides premium stock advisory services,
+daily trading calls, professional market research,
+wealth management guidance, and dedicated support for investors across India.
+
+</p>
+
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+
+<button class="gradient-btn text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition w-full sm:w-auto">
+Start Trading
+</button>
+
+<button class="border border-yellow-400 px-8 py-4 rounded-full font-bold hover:bg-yellow-400 hover:text-black transition w-full sm:w-auto">
+Learn More
+</button>
+
+</div>
+
+
+<div class="grid grid-cols-3 gap-4 mt-14 text-center lg:text-left">
+
+<div>
+<h2 class="text-3xl md:text-4xl font-bold gold">24/7</h2>
+<p class="text-gray-400 mt-2 text-sm md:text-base">Support</p>
+</div>
+
+<div>
+<h2 class="text-3xl md:text-4xl font-bold gold">70:30</h2>
+<p class="text-gray-400 mt-2 text-sm md:text-base">Profit Sharing</p>
+</div>
+
+<div>
+<h2 class="text-3xl md:text-4xl font-bold gold">SEBI</h2>
+<p class="text-gray-400 mt-2 text-sm md:text-base">Registered</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- HERO CARD -->
+<div class="flex justify-center">
+
+<div class="glass rounded-3xl p-6 md:p-8 w-full max-w-lg shadow-2xl">
+
+<h2 class="text-2xl md:text-3xl font-bold gold mb-8 text-center">
+Live Trading Insights
+</h2>
+
+<div class="space-y-5">
+
+<div class="bg-gray-900 rounded-2xl p-5">
+
+<p class="text-gray-400 text-sm">NIFTY CALL</p>
+
+<h3 class="text-xl md:text-2xl font-bold mt-2">
+BUY ABOVE 24,550
+</h3>
+
+<p class="text-green-400 mt-3">
+Target: 24,720+
+</p>
+
+</div>
+
+
+<div class="bg-gray-900 rounded-2xl p-5">
+
+<p class="text-gray-400 text-sm">BANKNIFTY CALL</p>
+
+<h3 class="text-xl md:text-2xl font-bold mt-2">
+BUY ABOVE 52,100
+</h3>
+
+<p class="text-green-400 mt-3">
+Target: 52,600+
+</p>
+
+</div>
+
+
+<div class="bg-gray-900 rounded-2xl p-5">
+
+<p class="text-gray-400 text-sm">MCX GOLD</p>
+
+<h3 class="text-xl md:text-2xl font-bold mt-2">
+BUY ON DIP
+</h3>
+
+<p class="text-green-400 mt-3">
+Strong Bullish Momentum
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- QUICK OVERVIEW -->
+<section id="overview" class="py-20 px-4 md:px-6 bg-black border-t border-gray-800">
+
+<div class="max-w-7xl mx-auto">
+
+<div class="text-center mb-16">
+
+<p class="gold tracking-[4px] font-semibold mb-4 text-sm">
+QUICK OVERVIEW
+</p>
+
+<h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+Financial Insights & Company Growth
+</h2>
+
+<p class="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+Professional market research and premium advisory services trusted by investors across India.
+</p>
+
+</div>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+<div class="glass rounded-3xl p-8 text-center hover:scale-105 transition">
+<div class="text-5xl mb-5">💰</div>
+<h3 class="text-4xl font-extrabold gold mb-4">90Cr+</h3>
+<p class="text-xl font-semibold mb-3">Assets Management</p>
+</div>
+
+<div class="glass rounded-3xl p-8 text-center hover:scale-105 transition">
+<div class="text-5xl mb-5">👥</div>
+<h3 class="text-4xl font-extrabold gold mb-4">15K+</h3>
+<p class="text-xl font-semibold mb-3">Active Clients</p>
+</div>
+
+<div class="glass rounded-3xl p-8 text-center hover:scale-105 transition">
+<div class="text-5xl mb-5">🏆</div>
+<h3 class="text-4xl font-extrabold gold mb-4">3000+</h3>
+<p class="text-xl font-semibold mb-3">HNI Clients</p>
+</div>
+
+<div class="glass rounded-3xl p-8 text-center hover:scale-105 transition">
+<div class="text-5xl mb-5">📈</div>
+<h3 class="text-4xl font-extrabold gold mb-4">20+</h3>
+<p class="text-xl font-semibold mb-3">Years Experience</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SERVICES -->
+<section id="services" class="py-24 px-4 md:px-6 bg-gray-950">
+
+<div class="max-w-7xl mx-auto">
+
+<div class="text-center mb-16">
+
+<p class="gold tracking-[4px] font-semibold mb-4">
+OUR SERVICES
+</p>
+
+<h2 class="text-4xl md:text-5xl font-bold">
+Professional Advisory Services
+</h2>
+
+<p class="text-gray-400 mt-6 max-w-3xl mx-auto">
+Designed for traders and investors seeking market growth, expert guidance, and premium support.
+</p>
+
+</div>
+
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass rounded-3xl p-8 card-hover">
+
+<div class="text-5xl mb-6">📈</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Daily Trading Calls
+</h3>
+
+<p class="text-gray-400 leading-relaxed">
+Professional intraday and positional trading calls with expert analysis and guidance.
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 card-hover">
+
+<div class="text-5xl mb-6">🤝</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Profit Sharing Model
+</h3>
+
+<p class="text-gray-400 leading-relaxed">
+Transparent 70:30 profit-sharing structure focused on client success and growth.
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 card-hover">
+
+<div class="text-5xl mb-6">📞</div>
+
+<h3 class="text-2xl font-bold mb-4">
+24/7 Assistance
+</h3>
+
+<p class="text-gray-400 leading-relaxed">
+Dedicated client support available anytime for premium members and investors.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PLANS -->
+<section id="plans" class="py-24 px-4 md:px-6 bg-black">
+
+<div class="max-w-7xl mx-auto">
+
+<div class="text-center mb-20">
+
+<p class="gold tracking-[4px] font-semibold mb-4">
+INVESTMENT PLANS
+</p>
+
+<h2 class="text-4xl md:text-5xl font-bold mb-6">
+Premium Membership Plans
+</h2>
+
+<p class="text-gray-400 text-lg max-w-4xl mx-auto leading-relaxed">
+Choose a premium advisory plan according to your investment goals and market experience.
+</p>
+
+</div>
+
+
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass rounded-3xl p-8 border border-gray-800">
+
+<p class="gold font-semibold tracking-[3px] mb-4">
+STARTER PLAN
+</p>
+
+<h3 class="text-5xl font-extrabold mb-4">
+₹3,75,000
+</h3>
+
+<p class="text-gray-400 mb-8">
+Perfect for beginners and growing investors.
+</p>
+
+<ul class="space-y-4 text-gray-300 mb-10">
+
+<li>✔ Daily Trading Calls</li>
+<li>✔ Market Research</li>
+<li>✔ Dedicated Assistant</li>
+<li>✔ 2 Months Access</li>
+<li>✔ Minimum Investment ₹1-2 Lakhs</li>
+
+</ul>
+
+<button class="gradient-btn w-full py-4 rounded-2xl text-black font-bold">
+Get Started
+</button>
+
+</div>
+
+
+
+<div class="rounded-3xl p-10 border-2 border-yellow-400 relative bg-gradient-to-b from-yellow-400/10 to-transparent">
+
+<div class="absolute top-0 right-8 bg-yellow-400 text-black px-5 py-2 rounded-b-2xl font-bold text-sm">
+MOST POPULAR
+</div>
+
+<p class="gold font-semibold tracking-[3px] mb-4">
+PREMIUM PLAN
+</p>
+
+<h3 class="text-5xl font-extrabold mb-4">
+₹7,50,000
+</h3>
+
+<p class="text-gray-300 mb-8">
+Advanced advisory package for serious investors.
+</p>
+
+<ul class="space-y-4 text-gray-200 mb-10">
+
+<li>✔ Priority Trading Signals</li>
+<li>✔ Dedicated Relationship Manager</li>
+<li>✔ Wealth Growth Strategies</li>
+<li>✔ Exclusive Market Updates</li>
+<li>✔ Premium Assistance</li>
+
+</ul>
+
+<button class="gradient-btn w-full py-4 rounded-2xl text-black font-bold">
+Join Premium
+</button>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 border border-yellow-500">
+
+<p class="gold font-semibold tracking-[3px] mb-4">
+DIAMOND ELITE
+</p>
+
+<h3 class="text-5xl font-extrabold mb-4">
+₹12,75,000
+</h3>
+
+<p class="text-gray-400 mb-8">
+Our highest-level premium service for elite investors.
+</p>
+
+<ul class="space-y-4 text-gray-300 mb-10">
+
+<li>✔ VIP Trading Assistance</li>
+<li>✔ Elite Market Research</li>
+<li>✔ Dedicated Market Expert</li>
+<li>✔ High Priority Support</li>
+<li>✔ Premium Client Privileges</li>
+
+</ul>
+
+<button class="gradient-btn w-full py-4 rounded-2xl text-black font-bold">
+Join Diamond
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- WHY US -->
+<section id="whyus" class="py-24 px-4 md:px-6 bg-gray-950">
+
+<div class="max-w-7xl mx-auto text-center">
+
+<p class="gold tracking-[4px] font-semibold mb-4">
+WHY WORK WITH US
+</p>
+
+<h2 class="text-4xl md:text-5xl font-bold mb-8">
+Why Investors Choose AK INVESTMENT
+</h2>
+
+<p class="text-gray-400 text-lg leading-relaxed max-w-4xl mx-auto">
+
+AK INVESTMENT focuses on professional market research,
+disciplined trading strategies, wealth growth guidance,
+and premium client support to help investors make informed decisions.
+
+</p>
+
+<div class="grid md:grid-cols-4 gap-8 mt-16">
+
+<div class="glass rounded-3xl p-8">
+<h3 class="text-5xl font-bold gold mb-3">24/7</h3>
+<p class="text-gray-400">Dedicated Support</p>
+</div>
+
+<div class="glass rounded-3xl p-8">
+<h3 class="text-5xl font-bold gold mb-3">SEBI</h3>
+<p class="text-gray-400">Registered Company</p>
+</div>
+
+<div class="glass rounded-3xl p-8">
+<h3 class="text-5xl font-bold gold mb-3">20+</h3>
+<p class="text-gray-400">Years Experience</p>
+</div>
+
+<div class="glass rounded-3xl p-8">
+<h3 class="text-5xl font-bold gold mb-3">15K+</h3>
+<p class="text-gray-400">Trusted Clients</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LEADERS -->
+<section id="leaders" class="py-24 px-4 md:px-6 bg-black">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<p class="gold tracking-[4px] font-semibold mb-4">
+COMPANY LEADERSHIP
+</p>
+
+<h2 class="text-4xl md:text-5xl font-bold mb-16">
+Meet The Founders
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div class="glass rounded-3xl p-10">
+
+<div class="w-28 h-28 rounded-full bg-yellow-400 text-black flex items-center justify-center text-4xl font-bold mx-auto mb-6">
+V
+</div>
+
+<h3 class="text-3xl font-bold mb-2">
+Vijay Raikwar
+</h3>
+
+<p class="gold font-medium mb-5">
+Founder & Market Analyst
+</p>
+
+<p class="text-gray-400">
+Specializing in market research, investment planning, and trading strategies.
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-10">
+
+<div class="w-28 h-28 rounded-full bg-yellow-400 text-black flex items-center justify-center text-4xl font-bold mx-auto mb-6">
+H
+</div>
+
+<h3 class="text-3xl font-bold mb-2">
+Himanshu Raikwar
+</h3>
+
+<p class="gold font-medium mb-5">
+Co-Founder & Client Relations Head
+</p>
+
+<p class="text-gray-400">
+Focused on premium client support and relationship management.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LEGAL -->
+<section id="legal" class="py-24 px-4 md:px-6 bg-gray-950">
+
+<div class="max-w-7xl mx-auto">
+
+<div class="text-center mb-16">
+
+<p class="gold tracking-[4px] font-semibold mb-4">
+LEGAL & COMPLIANCE
+</p>
+
+<h2 class="text-4xl md:text-5xl font-bold mb-6">
+Legal Information & Policies
+</h2>
+
+</div>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+<div class="glass rounded-3xl p-8">
+<h3 class="text-2xl font-bold gold mb-4">Privacy Policy</h3>
+<p class="text-gray-400">We maintain confidentiality and secure handling of client data and information.</p>
+</div>
+
+<div class="glass rounded-3xl p-8">
+<h3 class="text-2xl font-bold gold mb-4">Terms & Conditions</h3>
+<p class="text-gray-400">Professional advisory services are provided under transparent operational guidelines.</p>
+</div>
+
+<div class="glass rounded-3xl p-8 border border-yellow-500">
+<h3 class="text-2xl font-bold gold mb-4">Refund Policy</h3>
+<p class="text-gray-400">
+For eligible premium plans, company may provide support compensation of up to 70% subject to policy verification.
+</p>
+</div>
+
+<div class="glass rounded-3xl p-8">
+<h3 class="text-2xl font-bold gold mb-4">Risk Disclosure</h3>
+<p class="text-gray-400">
+Investments in securities market are subject to market risks. Trade responsibly.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LEAD FORM -->
+<section id="leadform" class="py-24 px-4 md:px-6 bg-black border-t border-gray-800">
+
+<div class="max-w-5xl mx-auto">
+
+<div class="glass rounded-[35px] p-8 md:p-14 border border-yellow-400/20">
+
+<div class="text-center mb-14">
+
+<p class="gold tracking-[4px] font-semibold mb-4 text-sm">
+GET STARTED
+</p>
+
+<h2 class="text-4xl md:text-6xl font-bold mb-6">
+Book Your Free Consultation
+</h2>
+
+<p class="text-gray-400 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+Fill out the form below and our investment advisory team will contact you shortly.
+</p>
+
+</div>
+
+
+
+<form
+action="https://formsubmit.co/akinvestmentbangalore@gmail.com"
+method="POST"
+class="space-y-8">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New AK INVESTMENT Lead">
+<input type="hidden" name="_next" value="https://google.com">
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+
+<label class="block text-sm font-medium text-gray-300 mb-3">
+Full Name
+</label>
+
+<input
+type="text"
+name="name"
+required
+placeholder="Enter your full name"
+
+class="w-full bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-yellow-400 transition text-white">
+
+</div>
+
+
+
+<div>
+
+<label class="block text-sm font-medium text-gray-300 mb-3">
+Phone Number
+</label>
+
+<input
+type="tel"
+name="phone"
+required
+placeholder="Enter your phone number"
+
+class="w-full bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-yellow-400 transition text-white">
+
+</div>
+
+</div>
+
+
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+
+<label class="block text-sm font-medium text-gray-300 mb-3">
+Email Address
+</label>
+
+<input
+type="email"
+name="email"
+required
+placeholder="Enter your email address"
+
+class="w-full bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-yellow-400 transition text-white">
+
+</div>
+
+
+
+<div>
+
+<label class="block text-sm font-medium text-gray-300 mb-3">
+Investment Budget
+</label>
+
+<select
+name="budget"
+required
+
+class="w-full bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-yellow-400 transition text-white">
+
+<option value="">Select Budget</option>
+
+<option>₹1L - ₹2L</option>
+<option>₹2L - ₹5L</option>
+<option>₹5L - ₹10L</option>
+<option>₹10L+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+
+<div>
+
+<label class="block text-sm font-medium text-gray-300 mb-3">
+Message
+</label>
+
+<textarea
+name="message"
+rows="5"
+placeholder="Tell us about your investment goals"
+
+class="w-full bg-gray-900 border border-gray-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-yellow-400 transition text-white"></textarea>
+
+</div>
+
+
+
+<button
+type="submit"
+
+class="gradient-btn w-full py-5 rounded-2xl text-black font-bold text-lg hover:scale-[1.02] transition">
+
+Submit Request
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PAYMENT -->
+<section id="payment" class="py-24 px-4 md:px-6 bg-black border-t border-gray-800">
+
+<div class="max-w-5xl mx-auto">
+
+<div class="glass rounded-[35px] p-8 md:p-14 border border-yellow-400/20 text-center">
+
+<p class="gold tracking-[4px] font-semibold mb-4 text-sm">
+SECURE PAYMENT
+</p>
+
+<h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+Official Company UPI Payment
+</h2>
+
+<p class="text-gray-400 text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-12">
+Complete your investment plan activation securely using our official company UPI ID.
+</p>
+
+
+
+<div class="bg-gradient-to-br from-yellow-400/10 to-transparent border border-yellow-400 rounded-3xl p-8 md:p-10 max-w-2xl mx-auto">
+
+<div class="w-24 h-24 rounded-full bg-yellow-400/10 border border-yellow-400 flex items-center justify-center mx-auto mb-8">
+
+<span class="text-5xl">💳</span>
+
+</div>
+
+<h3 class="text-3xl md:text-4xl font-bold gold mb-6">
+Official UPI ID
+</h3>
+
+<div class="bg-black border border-gray-700 rounded-2xl px-6 py-5 mb-8">
+
+<p class="text-gray-400 text-sm mb-2">
+Company UPI ID
+</p>
+
+<h2 class="text-2xl md:text-3xl font-bold break-all">
+akinvestment55@nyes
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-4 md:px-6 bg-gray-950">
+
+<div class="max-w-5xl mx-auto text-center">
+
+<p class="gold tracking-[4px] font-semibold mb-4">
+CONTACT US
+</p>
+
+<h2 class="text-4xl md:text-5xl font-bold mb-6">
+Talk To Our Advisory Team
+</h2>
+
+<p class="text-gray-400 text-lg mb-12">
+Connect with our team for investment plans, premium support, and advisory services.
+</p>
+
+<div class="glass rounded-3xl p-8 mb-10 inline-block">
+
+<p class="text-gray-400 mb-3">
+Official Email Address
+</p>
+
+<a href="mailto:akinvestmentbangalore@gmail.com"
+class="text-2xl md:text-3xl font-bold gold hover:underline">
+
+akinvestmentbangalore@gmail.com
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="border-t border-gray-800 py-12 px-6 bg-black">
+
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+
+<div>
+
+<h2 class="text-3xl font-bold gold mb-3">
+AK INVESTMENT
+</h2>
+
+<p class="text-gray-400 leading-relaxed">
+Professional Stock Advisory & Market Research Services.
+</p>
+
+</div>
+
+
+
+<div class="md:text-right text-gray-400 text-sm leading-relaxed">
+
+<p>
+SEBI Registration Number: INH000024338
+</p>
+
+<p class="mt-3">
+Level 3, Discoverer, INTERNATIONAL TECH PARK,
+Whitefield Main Rd, Pattandur Agrahara,
+Whitefield, Bengaluru, Karnataka 560066
+</p>
+
+<p class="mt-3">
+Email: akinvestmentbangalore@gmail.com
+</p>
+
+<p class="mt-4">
+© 2026 AK INVESTMENT. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- DISCLAIMER -->
+<section class="bg-black border-t border-gray-800 py-8 px-6">
+
+<div class="max-w-7xl mx-auto">
+
+<h3 class="gold text-xl font-bold mb-4">
+Disclaimer
+</h3>
+
+<p class="text-gray-500 text-sm leading-relaxed">
+
+Investments in securities market are subject to market risks.
+Registration granted by SEBI does not guarantee performance
+or assurance of returns to investors.
+Past performance is not indicative of future results.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+function toggleMenu(){
+
+const menu = document.getElementById('mobileMenu');
+
+menu.classList.toggle('hidden');
+
+}
+
+</script>
+
+</body>
+</html>
+```
